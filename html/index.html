@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0, user-scalable=yes">
+    <meta name="keywords" content="수정안과 레이저 백내장 수술">
+    <meta name="description" content="레이저 백내장 수술, 단초첨, 다초첨렌즈">
+    <meta property="og:url" content="https://crystaleye.okyc.kr/cataract">
+    <meta property="og:title" content="수정안과 백내장 프로모션">
+    <meta property="og:description" content="레이저 백내장 수술, 단초첨, 다초첨렌즈">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://img.okyc.kr/crystaleye.cataract/ogimg2.jpg">
+    <meta property="og:site_name" content="수정안과 백내장 프로모션">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="수정안과 백내장 프로모션">
+    <meta name="twitter:url" content="https://crystaleye.okyc.kr/cataract">
+    <meta name="twitter:image" content="https://img.okyc.kr/crystaleye.cataract/ogimg2.jpg">
+    <meta name="twitter:description" content="레이저 백내장 수술, 단초첨, 다초첨렌즈">
+    <title>수정안과 백내장 프로모션</title>
+
+    <link rel="shortcut icon" href="https://img.okyc.kr/crystaleye.cataract/favicon.ico">
+    <link rel="apple-touch-icon" href="https://img.okyc.kr/crystaleye.cataract/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.css" integrity="sha512-Aeqz1zfbRIQHDPsvEobXzaeXDyh8CUqRdvy6QBCQEbxIc/vazrTdpjEufMbxSW61+7a5vIDDuGh8z5IekVG0YA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    <script>
+        let gSwiper = null;
+        let gTitle = '수정안과 백내장 프로모션';
+        let gDesc = '레이저 백내장 수술, 단초첨, 다초첨렌즈';
+        let gUrl = 'https://crystaleye.okyc.kr/cataract';
+        let gKakaoThumb = 'https://img.okyc.kr/crystaleye.cataract/kakao_thumb.jpg';
+        let gApiKey = '9A7bBv87I1NPlFn72dGC3p0qJqLU82r7iLnxKmaa';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js" integrity="sha512-3Ei7OPFo83kw3cPbDLeLhn/YF8tZB7Vs8sfli0B/KEekureL5eosDeshYFICCvt4K8i0yUil/lK3cSiic2Wjkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="/assets/okyc.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NRL5HTW');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+<div class="wrap">
+
+    <header>
+        <button type="button" class="btn-home" onclick="movePageByID('home')"><img src="https://img.okyc.kr/common/icon-home.png" alt="home"/></button>
+        <h1><a href="javascript:location.href = gUrl"><img src="https://okyc-images.s3.ap-northeast-2.amazonaws.com/kjs/logo.png" alt="logo"/></a></h1>
+        <button type="button" class="btn-share"><img src="https://img.okyc.kr/common/icon-share.png" alt="share"/></button>
+        <button type="button" class="btn-close" style="display: none" onclick="hidePopup()"><img src="https://img.okyc.kr/common/icon-close.png" alt="close"/></button>
+    </header>
+
+    <div id="gSwiper" class="swiper gSwiper" style="position:relative">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-start popover-swipe" id="home">
+                <img class="bg" src="https://img.okyc.kr/crystaleye.cataract/pg1/bg.png" alt="bg"/>
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg1/el1.png" alt="el"
+                     class="el el1 animate__animated animate__bounceInDown"
+                     style="left:9.1%; top:5.1%; width:81.5%; animation-delay: .5s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg1/el2.png" alt="el"
+                     class="el animate__animated animate__zoomInDown"
+                     style="left:9.1%; top:17.4%; width:81.5%; animation-delay: 1.0s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg1/el3.png" alt="el"
+                     class="el animate__animated animate__bounceInUp"
+                     style="left:0; top:20.7%; width:100%; animation-delay: 1.8s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg1/bg2.png" alt="bg"
+                     class="el" style="left:0; bottom:0"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg1/el4.png" alt="el"
+                     class="el animate__animated animate__zoomInLeft"
+                     style="left:75.4%; top:31.1%; width:20.4%; animation-delay: 2.2s"
+                />
+
+                <a href="https://www.crystaleye.co.kr" target="_blank" class="el link"
+                   style="left:16.2%; top:89.9%; width:17.2%; height:8.8%">&nbsp;</a>
+                <a href="tel:0513317575" class="el link"
+                   style="left:33.4%; top:89.9%; width:16.9%; height:8.8%">&nbsp;</a>
+                <a href="https://pf.kakao.com/_xmqFnl/chat" target="_blank" class="el link"
+                   style="left:50%; top:89.9%; width:17.3%; height:8.8%">&nbsp;</a>
+                <a href="https://talk.naver.com/ct/wc0tvo" target="_blank" class="el link"
+                   style="left:66.8%; top:89.9%; width:16.9%; height:8.8%">&nbsp;</a>
+            </div>
+
+            <!-- page2 -->
+            <div class="swiper-slide contact-button">
+                <img class="bg" src="https://img.okyc.kr/crystaleye.cataract/pg2/bg.png" alt="bg"/>
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg2/el1.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__bounceInDown"
+                     style="left:3.5%; top:4.1%; width:93.1%; animation-delay: 0.2s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg2/el2.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__flipInX"
+                     style="left:3.5%; top:12.8%; width:93.1%; animation-delay: .8s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg2/el3.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__flipInX"
+                     style="left:3.5%; top:28.8%; width:93.1%; animation-delay: 1.2s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg2/el4.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__flipInX"
+                     style="left:3.5%; top:44.7%; width:93.1%; animation-delay: 1.6s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg2/el5.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__lightSpeedInRight"
+                     style="left:8.9%; top:56.1%; width:81.5%; animation-delay: 2.0s"
+                />
+
+<!--                <img src="https://img.okyc.kr/crystaleye.cataract/pg2/button.png" alt="el"-->
+<!--                     class="el animate__animated animate__infinite"-->
+<!--                     data-animate="animate__pulse"-->
+<!--                     style="left:24.1%; top:86.1%; width:52.3%; animation-delay: 2.0s"-->
+<!--                />-->
+
+
+<!--                <a href="javascript:showContact()" class="el link"-->
+<!--                   style="left:24.1%; top:86.1%; width:52.3%; height:10.7%">&nbsp;</a>-->
+            </div>
+
+            <!-- page3 -->
+            <div class="swiper-slide contact-button">
+                <img class="bg" src="https://img.okyc.kr/crystaleye.cataract/pg3/bg.png" alt="bg"/>
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg3/bg2.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__fadeInUp"
+                     style="left:0; top:0; width:100%; animation-delay: 0.7s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg3/el1.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__bounceInDown"
+                     style="left:7.0%; top:3.6%; width:85.6%; animation-delay: 0.2s"
+                />
+
+                <div id="sub-swiper-page03" class="swiper subSwiper"
+                     style="position: absolute; display: block; left:0; top:18.8%; width:100%"
+                >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/slide1.png" alt="el" /></div>
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/slide2.png" alt="el" /></div>
+                    </div>
+                    <div class="sub-swiper-button-prev" style="top:30%"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/arrow-prev.png" alt="el"/></div>
+                    <div class="sub-swiper-button-next" style="top:30%"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/arrow-next.png" alt="el"/></div>
+                </div>
+            </div>
+
+            <!-- page4 -->
+            <div class="swiper-slide contact-button">
+                <img class="bg" src="https://img.okyc.kr/crystaleye.cataract/pg4/bg.png" alt="bg"/>
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg4/bg5.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__fadeInUp"
+                     style="left:0; bottom:0; width:100%; animation-delay: 1.0s"
+                />
+
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg4/bg3.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__fadeInUp"
+                     style="left:0; bottom:0; width:100%; animation-delay: 1.8s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg4/bg2.png" alt="el"
+                     class="el" style="left:0; bottom:0; width:100%"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg4/bg4.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__fadeInUp"
+                     style="left:0; bottom:0; width:100%; animation-delay: 1.8s; z-index: 9999999"
+                />
+
+                <div id="sub-swiper-page04" class="swiper subSwiper"
+                     style="position: absolute; display: block; left:0; top:21.8%; width:100%"
+                >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg4/slide1-1.png" alt="el" /></div>
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg4/slide1-2.png" alt="el" /></div>
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg4/slide2-1.png" alt="el" /></div>
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg4/slide2-2.png" alt="el" /></div>
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg4/slide3-1.png" alt="el" /></div>
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg4/slide3-2.png" alt="el" /></div>
+                    </div>
+                    <div class="sub-swiper-button-prev" style="top:calc(58%)"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/arrow-prev.png" alt="el"/></div>
+                    <div class="sub-swiper-button-next" style="top:calc(58%)"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/arrow-next.png" alt="el"/></div>
+                </div>
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg4/el1.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__bounceInDown"
+                     style="left:9.3%; top:3.4%; width:81.5%; animation-delay: 0.2s"
+                />
+            </div>
+
+            <!-- page5 -->
+            <div class="swiper-slide contact-button">
+                <img class="bg" src="https://img.okyc.kr/crystaleye.cataract/pg5/bg.png" alt="bg"/>
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg5/el1.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__bounceInDown"
+                     style="left:9.2%; top:3.2%; width:81.5%; animation-delay: 0.2s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg5/el2.png" alt="el"
+                     class="el animate__animated link2subSlide"
+                     data-on="https://img.okyc.kr/crystaleye.cataract/pg5/el2-1.png"
+                     data-off="https://img.okyc.kr/crystaleye.cataract/pg5/el2.png"
+                     data-animate="animate__bounceIn"
+                     data-order="2"
+                     data-link="1"
+                     style="left:6.4%; top:19.3%; width:28.9%; animation-delay: 0.8s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg5/el3.png" alt="el"
+                     class="el animate__animated link2subSlide"
+                     data-on="https://img.okyc.kr/crystaleye.cataract/pg5/el3-1.png"
+                     data-off="https://img.okyc.kr/crystaleye.cataract/pg5/el3.png"
+                     data-animate="animate__bounceIn"
+                     data-order="2"
+                     data-link="2"
+                     style="left:35.4%; top:19.3%; width:29.2%; animation-delay: 1.0s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg5/el4.png" alt="el"
+                     class="el animate__animated link2subSlide"
+                     data-on="https://img.okyc.kr/crystaleye.cataract/pg5/el4-1.png"
+                     data-off="https://img.okyc.kr/crystaleye.cataract/pg5/el4.png"
+                     data-animate="animate__bounceIn"
+                     data-order="2"
+                     data-link="3"
+                     style="left:64.7%; top:19.3%; width:28.6%; animation-delay: 1.2s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg5/el5.png" alt="el"
+                     class="el animate__animated link2subSlide"
+                     data-on="https://img.okyc.kr/crystaleye.cataract/pg5/el5-1.png"
+                     data-off="https://img.okyc.kr/crystaleye.cataract/pg5/el5.png"
+                     data-animate="animate__bounceIn"
+                     data-order="2"
+                     data-link="4"
+                     style="left:21.1%; top:32.3%; width:28.6%; animation-delay: 1.4s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg5/el6.png" alt="el"
+                     class="el animate__animated link2subSlide"
+                     data-on="https://img.okyc.kr/crystaleye.cataract/pg5/el6-1.png"
+                     data-off="https://img.okyc.kr/crystaleye.cataract/pg5/el6.png"
+                     data-animate="animate__bounceIn"
+                     data-order="2"
+                     data-link="5"
+                     style="left:49.9%; top:32.3%; width:28.9%; animation-delay: 1.6s"
+                />
+
+
+                <div id="sub-swiper-page05" class="swiper subSwiper"
+                     style=" position: absolute; display: block; left:0; top:47.8%; width:100%"
+                >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://img.okyc.kr/crystaleye.cataract/pg5/slide0.png" alt="el" /></div>
+                        <div class="swiper-slide">
+                            <img src="https://img.okyc.kr/crystaleye.cataract/pg5/slide1.png" alt="el" />
+                            <iframe class="youtube el"
+                                    style="left:8.6%; top:21.0%; width:82.7%; height:71.1%"
+                                    width="560" height="315" src="https://www.youtube.com/embed/zTzrm4Eu25k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://img.okyc.kr/crystaleye.cataract/pg5/slide2.png" alt="el" />
+                            <iframe class="youtube el"
+                                    style="left:8.6%; top:21.0%; width:82.7%; height:71.1%"
+                                    width="560" height="315" src="https://www.youtube.com/embed/8rbFhv4WwIA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://img.okyc.kr/crystaleye.cataract/pg5/slide3.png" alt="el" />
+                            <iframe class="youtube el"
+                                    style="left:8.6%; top:21.0%; width:82.7%; height:71.1%"
+                                    width="560" height="315" src="https://www.youtube.com/embed/QUVe7emtI6g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://img.okyc.kr/crystaleye.cataract/pg5/slide4.png" alt="el" />
+                            <iframe class="youtube el"
+                                    style="left:8.6%; top:21.0%; width:82.7%; height:71.1%"
+                                    width="560" height="315" src="https://www.youtube.com/embed/V6jverXGVkA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://img.okyc.kr/crystaleye.cataract/pg5/slide5.png" alt="el" />
+                            <iframe class="youtube el"
+                                    style="left:8.6%; top:21.0%; width:82.7%; height:71.1%"
+                                    width="560" height="315" src="https://www.youtube.com/embed/WvEHbQAoqrw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="sub-swiper-button-prev" style="top:-30%"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/arrow-prev.png" alt="el"/></div>
+                    <div class="sub-swiper-button-next" style="top:-30%"><img src="https://img.okyc.kr/crystaleye.cataract/pg3/arrow-next.png" alt="el"/></div>
+                </div>
+
+<!--                <img src="https://img.okyc.kr/crystaleye.cataract/pg5/button.png" alt="el"-->
+<!--                     class="el animate__animated animate__infinite"-->
+<!--                     data-animate="animate__pulse"-->
+<!--                     style="left:28.5%; top:87.3%; width:44.4%; animation-delay: 1.8s"-->
+<!--                />-->
+<!--                <a href="javascript:showContact()" class="el link"-->
+<!--                   style="left:28.5%; top:87.3%; width:44.4%; height:11.0%">&nbsp;</a>-->
+            </div>
+
+            <!-- page6 -->
+            <div class="swiper-slide slide-end">
+                <img class="bg" src="https://img.okyc.kr/crystaleye.cataract/pg6/bg.png" alt="bg"/>
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/bg3.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__fadeIn"
+                     style="left:0; top:0; width:100%; animation-delay: 0.5s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/bg4.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__bounceInUp"
+                     style="left:0; top:37.6%; width:100%; animation-delay: 0.9s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/el1.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__bounceInDown"
+                     style="left:5.8%; top:3.4%; width:87.6%; animation-delay: 0.2s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/bg2.png" alt="el"
+                     class="el" style="left:0; bottom:0; width:100%"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/el2.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__bounceIn"
+                     style="left:20.8%; top:11.3%; width:59.1%; animation-delay: 1.5s"
+                />
+
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/el3.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__flipInX"
+                     style="left:8.3%; top:48.9%; width:83.6%; animation-delay: 1.7s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/el4.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__flipInX"
+                     style="left:8.3%; top:57.4%; width:83.6%; animation-delay: 1.9s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/el5.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__flipInX"
+                     style="left:8.3%; top:66.3%; width:83.6%; animation-delay: 2.1s"
+                />
+                <img src="https://img.okyc.kr/crystaleye.cataract/pg6/el6.png" alt="el"
+                     class="el animate__animated"
+                     data-animate="animate__flipInX"
+                     style="left:8.3%; top:74.8%; width:83.6%; animation-delay: 2.3s"
+                />
+
+                <a href="https://www.crystaleye.co.kr" target="_blank" class="el link"
+                   style="left:16.2%; top:89.9%; width:17.2%; height:8.8%">&nbsp;</a>
+                <a href="tel:0513317575" class="el link"
+                   style="left:33.4%; top:89.9%; width:16.9%; height:8.8%">&nbsp;</a>
+                <a href="https://pf.kakao.com/_xmqFnl/chat" target="_blank" class="el link"
+                   style="left:50%; top:89.9%; width:17.3%; height:8.8%">&nbsp;</a>
+                <a href="https://talk.naver.com/ct/wc0tvo" target="_blank" class="el link"
+                   style="left:66.8%; top:89.9%; width:16.9%; height:8.8%">&nbsp;</a>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div id="contact-button-wrapper">
+            <section id="contact-button">
+                <a href="javascript:showContact()">
+                    <img src="https://img.okyc.kr/crystaleye.cataract/contact-button.png" alt="el"
+                         class="animate__animated animate__infinite animate__pulse" />
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <footer id="copyright"><img src="https://img.okyc.kr/crystaleye.lasic/footer.jpg" alt="footer" style="width:100%"></footer>
+</div>
+
+<div id="share-buttons" tabindex="0" class="off">
+    <ul>
+        <li><a href="javascript:share2KakaoLink('프로모션 바로가기')"><img src="https://img.okyc.kr/common/icon-kakao.png" alt="카카오톡"/>카카오톡</a></li>
+        <li><a href="javascript:share2Facebook()"><img src="https://img.okyc.kr/common/icon-facebook.png" alt="페이스북"/>페이스북</a></li>
+        <li><a href="javascript:share2NaverBlog()"><img src="https://img.okyc.kr/common/icon-blog.png" alt="네이버블로그"/>네이버 블로그</a></li>
+        <li><a href="javascript:share2SMS()"><img src="https://img.okyc.kr/common/icon-sms.png" alt="문자"/>문자 발송</a></li>
+        <li><a href="javascript:share2Email()"><img src="https://img.okyc.kr/common/icon-email.png" alt="email"/>이메일 발송</a></li>
+        <li><a href="javascript:share2Clipboard()"><img src="https://img.okyc.kr/common/icon-link.png" alt="링크복사"/>링크 복사</a></li>
+    </ul>
+</div>
+
+<section id="popover-contact" tabindex="0">
+    <form onsubmit="submitContact(); return false;">
+        <input type="hidden" id="confirmed-cn" value=""/>
+        <input type="hidden" id="category" value="백내장"/>
+        <div class="contact-wrap">
+            <img src="https://img.okyc.kr/crystaleye.lasic/db.png" alt=""/>
+            <input id="contact-name" class="text-input" style="left:17.9%; top:28.2%; width:64.7%; height:4.5%" type="text" placeholder="성함을 입력하세요" required>
+            <input id="contact-cp" class="text-input" style="left:17.9%; top:41.0%; width:42.1%; height:3.9%" type="number" pattern="01[0|1|6|7|8|9][0-9]{3,4}[0-9]{4}" placeholder="숫자만입력" title="휴대폰번호(01000000000)" required>
+            <input id="contact-cert-number" class="text-input" style="left:17.9%; top:53.0%; width:42.1%; height:4.5%" type="number" pattern="[0-9]{6}" placeholder="6자리 숫자" title="123456" required>
+            <input id="contact-agree" class="input-checkbox" style="left:17.0%; top:74.9%; width:3%; height:3%; margin:0; " type="checkbox" name="agree" value="1" required>
+            <a href="javascript:hidePopup()" class="text-link" style="left:41.9%; top:1.7%; width:15.9%; height:9.9%">&nbsp;</a>
+            <a href="javascript:sendCertNumber()" class="text-link" style="left:62.0%; top:40.7%; width:21.7%; height:5.2%">&nbsp;</a>
+            <a href="javascript:confirmCertNumber()" class="text-link" style="left:62.0%; top:53.0%; width:21.7%; height:5.2%">&nbsp;</a>
+            <button type="submit" class="text-link" style="left:37.4%; top:80.8%; width:24.8%; height:7.6%">&nbsp;</button>
+        </div>
+    </form>
+</section>
+
+<section id="popover-contact-ok" tabindex="0">
+    <div class="contact-wrap">
+        <img src="https://img.okyc.kr/crystaleye.lasic/db-ok.png" alt=""/>
+        <a href="javascript:hidePopup()" class="text-link" style="left:41.9%; top:1.7%; width:15.9%; height:9.9%">&nbsp;</a>
+    </div>
+</section>
+
+<div id="scroll-down-wrapper"> <div id="scroll-down"> <span class="arrow-down"> </span> <span id="scroll-title">Scroll</span> </div> </div>
+<div id="swipe-info"> <img src="https://img.okyc.kr/common/icon-swipe.png" alt="swipe"/> <span>좌우로 넘겨보세요</span> </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(()=>{ initKakao('e8a1206c6575c65ab8e3e2cbe56de6aa'); });
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRL5HTW"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
